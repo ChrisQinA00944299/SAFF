@@ -1,0 +1,68 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- MATERIAL ICONS API -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- BOOTSTRAP IMPORT -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JQUERY IMPORT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+    <div class="main_container">
+       
+        <div id="map">
+            MAP goes here
+        </div>
+       
+        <button type="button" class="btn btn-dark">Explore</button>
+    </div>
+
+    <!-- DIV WITH LOCATION INFO THAT SLIDES UP/DOWN WHEN CLICKED-->
+    <div class="slider" id="slider">
+
+        <!-- ARROW FOR SLIDING UP/DOWN -->
+        <div class="slider_icon" id="slide">
+            <i class="material-icons slider_icon"> 
+                keyboard_arrow_up
+            </i>
+
+        </div>
+
+        <div class="slider_icon inactive">
+            <i class="material-icons slider_icon">
+                keyboard_arrow_down
+            </i>
+        </div>
+        
+        <!-- LOCATION INFO GOES HERE -->
+        <div class="location_container" id="location_container">
+            <h1 style="padding: 0.45em !important;"class="location-heading">Search Nearby (ex. Vancouver City Centre)</h1>
+        </div>
+        
+       
+
+    </div>
+    
+    <link rel="stylesheet" href="../css/map.css">
+    <input id="pac-input" class="controls" type="text" placeholder="Search... ">
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="/js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAUt4GtukfT57wuWBKFfrfYe4o3EseRa8&libraries=places,visualization&callback=initAutocomplete"
+    async defer></script>
+    <script src="../js/slider.js" type="module"></script>
+    <!-- <script src="../js/markers.js" type="module"></script> -->
+
+</body>
+
+</html>
